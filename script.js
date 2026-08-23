@@ -43,10 +43,10 @@ if (contactForm) {
         const goals = contactForm.querySelector('textarea').value;
 
         // Create WhatsApp message
-        const message = `Hi Captain Wally!%0A%0AI'm interested in your coaching programs.%0A%0APersonal Info:%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A%0APhysical Stats:%0AWeight: ${weight} kg%0AHeight: ${height} cm%0A%0AFitness Goals:%0A${goals}`;
+        const message = `Hi C.Waly!%0A%0AI'm interested in your coaching programs.%0A%0APersonal Info:%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A%0APhysical Stats:%0AWeight: ${weight} kg%0AHeight: ${height} cm%0A%0AFitness Goals:%0A${goals}`;
 
         // Open WhatsApp
-        window.open(`https://wa.me/201017326621?text=${message}`, '_blank');
+        window.open(`https://wa.me/201124859604?text=${message}`, '_blank');
 
         // Show success message
         alert('Great! Opening WhatsApp to connect with Captain Wally...');
