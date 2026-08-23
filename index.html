@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captain Wally - Personal Fitness Coaching</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black bg-opacity-95 backdrop-blur z-50 border-b border-neon-green border-opacity-20">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-neon-green">CAPTAIN WALLY</div>
+            <ul class="hidden md:flex gap-8 text-sm">
+                <li><a href="#home" class="hover:text-neon-green transition">HOME</a></li>
+                <li><a href="#about" class="hover:text-neon-green transition">ABOUT</a></li>
+                <li><a href="#services" class="hover:text-neon-green transition">SERVICES</a></li>
+                <li><a href="#portfolio" class="hover:text-neon-green transition">PORTFOLIO</a></li>
+                <li><a href="#pricing" class="hover:text-neon-green transition">PRICING</a></li>
+                <li><a href="#contact" class="hover:text-neon-green transition">CONTACT</a></li>
+            </ul>
+            <button id="mobileMenuBtn" class="md:hidden text-neon-green">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <ul id="mobileMenu" class="hidden md:hidden flex-col gap-4 px-4 pb-4 text-sm">
+            <li><a href="#home" class="hover:text-neon-green transition">HOME</a></li>
+            <li><a href="#about" class="hover:text-neon-green transition">ABOUT</a></li>
+            <li><a href="#services" class="hover:text-neon-green transition">SERVICES</a></li>
+            <li><a href="#portfolio" class="hover:text-neon-green transition">PORTFOLIO</a></li>
+            <li><a href="#pricing" class="hover:text-neon-green transition">PRICING</a></li>
+            <li><a href="#contact" class="hover:text-neon-green transition">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen pt-20 flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-neon-green via-transparent to-transparent opacity-10"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 text-white leading-tight animate-fade-in">
+                Transform Your <span class="text-neon-green">Body & Mind</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 animate-fade-in-delay">
+                Get personalized online training programs designed specifically for your goals. Expert coaching, proven results.
+            </p>
+            <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="bg-neon-green text-black px-8 py-4 rounded font-bold text-lg hover:bg-opacity-90 transition transform hover:scale-105 animate-fade-in-delay-2">
+                START YOUR TRANSFORMATION
+            </button>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+                About <span class="text-neon-green">Captain Wally</span>
+            </h2>
+            <div class="border-b-2 border-neon-green w-20 mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-gray-800 rounded h-96 flex items-center justify-center">
+                    <span class="text-gray-600">Professional Photo</span>
+                </div>
+                <div class="space-y-6">
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        With years of dedicated experience in fitness coaching and bodybuilding, I'm passionate about helping individuals achieve their transformation goals. My expertise spans custom program design, personalized nutrition planning, and proven coaching methodologies.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-4">
+                            <span class="text-neon-green text-2xl">��</span>
+                            <p class="text-gray-300"><strong>Expert Fitness Coaching:</strong> Specialized in muscle building, fat loss, and performance enhancement</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-neon-green text-2xl">✓</span>
+                            <p class="text-gray-300"><strong>Custom Program Design:</strong> Tailored workouts including PPL, Arnold Split, and personalized routines</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-neon-green text-2xl">✓</span>
+                            <p class="text-gray-300"><strong>Nutrition Planning:</strong> Comprehensive meal plans and diet strategies for optimal results</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-neon-green text-2xl">✓</span>
+                            <p class="text-gray-300"><strong>Online Coaching:</strong> 100% online programs accessible from anywhere in the world</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 px-4 bg-black">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+                My <span class="text-neon-green">Services</span>
+            </h2>
+            <div class="border-b-2 border-neon-green w-20 mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-gradient-to-b from-gray-900 to-black border border-neon-green border-opacity-30 rounded-lg p-8 hover:border-opacity-100 transition cursor-pointer transform hover:scale-105">
+                    <div class="text-4xl mb-4 text-neon-green">💪</div>
+                    <h3 class="text-2xl font-bold mb-4">Online Fitness & Muscle Building Coaching</h3>
+                    <p class="text-gray-400 mb-4">
+                        Personalized training programs designed to build lean muscle, increase strength, and transform your physique.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>✓ Customized workout plans</li>
+                        <li>✓ Weekly progress tracking</li>
+                        <li>✓ Form correction & guidance</li>
+                        <li>✓ Real-time adjustments</li>
+                    </ul>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="service-card bg-gradient-to-b from-gray-900 to-black border border-neon-green border-opacity-30 rounded-lg p-8 hover:border-opacity-100 transition cursor-pointer transform hover:scale-105">
+                    <div class="text-4xl mb-4 text-neon-green">🍎</div>
+                    <h3 class="text-2xl font-bold mb-4">Personalized Meal & Diet Plans</h3>
+                    <p class="text-gray-400 mb-4">
+                        Custom nutrition strategies tailored to your body type, goals, and lifestyle for optimal results.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>✓ Macro-optimized meal plans</li>
+                        <li>✓ Supplement recommendations</li>
+                        <li>✓ Flexible eating strategies</li>
+                        <li>✓ Ongoing nutrition support</li>
+                    </ul>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="service-card bg-gradient-to-b from-gray-900 to-black border border-neon-green border-opacity-30 rounded-lg p-8 hover:border-opacity-100 transition cursor-pointer transform hover:scale-105">
+                    <div class="text-4xl mb-4 text-neon-green">⚡</div>
+                    <h3 class="text-2xl font-bold mb-4">Specialized Workout Routines</h3>
+                    <p class="text-gray-400 mb-4">
+                        Expert programming including PPL, Arnold Split, push/pull/legs, and fully customized training splits.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>✓ PPL (Push/Pull/Legs)</li>
+                        <li>✓ Arnold Split</li>
+                        <li>✓ Full Body routines</li>
+                        <li>✓ Custom programming</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Transformations -->
+    <section id="portfolio" class="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+                Client <span class="text-neon-green">Transformations</span>
+            </h2>
+            <div class="border-b-2 border-neon-green w-20 mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="transformation-card bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-neon-green transition cursor-pointer transform hover:scale-105">
+                    <div class="bg-gradient-to-b from-neon-green to-transparent h-64 flex items-center justify-center">
+                        <span class="text-gray-700 font-bold">Before & After</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Client Transformation #1</h3>
+                        <p class="text-gray-400 text-sm mb-3">12-week muscle building program</p>
+                        <p class="text-neon-green font-bold">+15 lbs muscle | -8% body fat</p>
+                    </div>
+                </div>
+                <div class="transformation-card bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-neon-green transition cursor-pointer transform hover:scale-105">
+                    <div class="bg-gradient-to-b from-neon-green to-transparent h-64 flex items-center justify-center">
+                        <span class="text-gray-700 font-bold">Before & After</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Client Transformation #2</h3>
+                        <p class="text-gray-400 text-sm mb-3">6-month complete transformation</p>
+                        <p class="text-neon-green font-bold">-35 lbs fat | Strength +200 lbs</p>
+                    </div>
+                </div>
+                <div class="transformation-card bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-neon-green transition cursor-pointer transform hover:scale-105">
+                    <div class="bg-gradient-to-b from-neon-green to-transparent h-64 flex items-center justify-center">
+                        <span class="text-gray-700 font-bold">Before & After</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Client Transformation #3</h3>
+                        <p class="text-gray-400 text-sm mb-3">3-month aesthetic upgrade</p>
+                        <p class="text-neon-green font-bold">+10 lbs muscle | -12% body fat</p>
+                    </div>
+                </div>
+                <div class="transformation-card bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-neon-green transition cursor-pointer transform hover:scale-105">
+                    <div class="bg-gradient-to-b from-neon-green to-transparent h-64 flex items-center justify-center">
+                        <span class="text-gray-700 font-bold">Before & After</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Client Transformation #4</h3>
+                        <p class="text-gray-400 text-sm mb-3">6-month strength & conditioning</p>
+                        <p class="text-neon-green font-bold">+25 lbs muscle | Peak Performance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 px-4 bg-black">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+                Coaching <span class="text-neon-green">Packages</span>
+            </h2>
+            <div class="border-b-2 border-neon-green w-20 mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 1 Month Package -->
+                <div class="pricing-card bg-gradient-to-b from-gray-900 to-black border border-neon-green border-opacity-50 rounded-lg p-8 hover:border-opacity-100 transition transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-2">1-Month Program</h3>
+                    <p class="text-gray-400 text-sm mb-6">Perfect for getting started</p>
+                    <div class="text-4xl font-bold text-neon-green mb-6">$149</div>
+                    <ul class="space-y-3 mb-8 text-gray-300 text-sm">
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>Custom workout program</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>Basic meal plan</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>2 check-ins per week</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>Email support</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-gray-600">✗</span>
+                            <span>Video call coaching</span>
+                        </li>
+                    </ul>
+                    <button onclick="openContact()" class="w-full bg-neon-green text-black py-3 rounded font-bold hover:bg-opacity-90 transition">
+                        GET STARTED
+                    </button>
+                </div>
+
+                <!-- 3 Month Package (Featured) -->
+                <div class="pricing-card bg-gradient-to-b from-neon-green from-opacity-20 to-gray-900 border-2 border-neon-green rounded-lg p-8 transform scale-105 transition">
+                    <div class="bg-neon-green text-black text-center py-2 rounded mb-4 font-bold text-sm">MOST POPULAR</div>
+                    <h3 class="text-2xl font-bold mb-2">3-Month Program</h3>
+                    <p class="text-gray-400 text-sm mb-6">Best results start here</p>
+                    <div class="text-4xl font-bold text-neon-green mb-6">$349</div>
+                    <ul class="space-y-3 mb-8 text-gray-300 text-sm">
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>Custom workout program</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>Complete meal plan</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>3 check-ins per week</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>Priority email support</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>2 video call sessions</span>
+                        </li>
+                    </ul>
+                    <button onclick="openContact()" class="w-full bg-neon-green text-black py-3 rounded font-bold hover:bg-opacity-90 transition">
+                        GET STARTED
+                    </button>
+                </div>
+
+                <!-- 6 Month Package -->
+                <div class="pricing-card bg-gradient-to-b from-gray-900 to-black border border-neon-green border-opacity-50 rounded-lg p-8 hover:border-opacity-100 transition transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-2">6-Month Program</h3>
+                    <p class="text-gray-400 text-sm mb-6">Ultimate transformation</p>
+                    <div class="text-4xl font-bold text-neon-green mb-6">$649</div>
+                    <ul class="space-y-3 mb-8 text-gray-300 text-sm">
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>Advanced custom programming</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>Complete meal plan + adjustments</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>Daily check-ins</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>24/7 priority support</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-neon-green">✓</span>
+                            <span>Weekly video coaching</span>
+                        </li>
+                    </ul>
+                    <button onclick="openContact()" class="w-full bg-neon-green text-black py-3 rounded font-bold hover:bg-opacity-90 transition">
+                        GET STARTED
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Form -->
+    <section id="contact" class="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+                Ready to <span class="text-neon-green">Transform?</span>
+            </h2>
+            <div class="border-b-2 border-neon-green w-20 mx-auto mb-12"></div>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <!-- Contact Form -->
+                <div class="bg-gradient-to-b from-gray-900 to-black border border-neon-green border-opacity-30 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6">Get Your Free Consultation</h3>
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Full Name</label>
+                            <input type="text" required class="w-full bg-black border border-neon-green border-opacity-50 rounded px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-opacity-100 focus:ring-2 focus:ring-neon-green focus:ring-opacity-20" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" required class="w-full bg-black border border-neon-green border-opacity-50 rounded px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-opacity-100 focus:ring-2 focus:ring-neon-green focus:ring-opacity-20" placeholder="your@email.com">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Weight (kg)</label>
+                                <input type="number" class="w-full bg-black border border-neon-green border-opacity-50 rounded px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-opacity-100 focus:ring-2 focus:ring-neon-green focus:ring-opacity-20" placeholder="80">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Height (cm)</label>
+                                <input type="number" class="w-full bg-black border border-neon-green border-opacity-50 rounded px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-opacity-100 focus:ring-2 focus:ring-neon-green focus:ring-opacity-20" placeholder="180">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Phone Number</label>
+                            <input type="tel" required class="w-full bg-black border border-neon-green border-opacity-50 rounded px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-opacity-100 focus:ring-2 focus:ring-neon-green focus:ring-opacity-20" placeholder="+20 10xxx xxxx">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Your Fitness Goals</label>
+                            <textarea required class="w-full bg-black border border-neon-green border-opacity-50 rounded px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-opacity-100 focus:ring-2 focus:ring-neon-green focus:ring-opacity-20 resize-none" rows="3" placeholder="Describe your fitness goals..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-neon-green text-black py-3 rounded font-bold hover:bg-opacity-90 transition transform hover:scale-105">
+                            SEND INQUIRY
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Quick Contact Methods -->
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-b from-gray-900 to-black border border-neon-green border-opacity-30 rounded-lg p-8">
+                        <h3 class="text-2xl font-bold mb-6">Quick Contact</h3>
+                        <div class="space-y-4">
+                            <!-- WhatsApp Button -->
+                            <a href="https://wa.me/201017326621?text=Hi%20Captain%20Wally%2C%20I%27m%20interested%20in%20your%20coaching%20programs" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 bg-green-600 hover:bg-green-700 transition p-4 rounded-lg">
+                                <span class="text-3xl">💬</span>
+                                <div>
+                                    <p class="font-bold">WhatsApp</p>
+                                    <p class="text-sm text-gray-200">+20 1017 326621</p>
+                                </div>
+                            </a>
+                            <!-- Instagram Button -->
+                            <a href="https://www.instagram.com/_coach_waly?igsi=MXJyOHRqOGx4M2JzbA==" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition p-4 rounded-lg">
+                                <span class="text-3xl">📸</span>
+                                <div>
+                                    <p class="font-bold">Instagram</p>
+                                    <p class="text-sm text-gray-200">@_coach_waly</p>
+                                </div>
+                            </a>
+                            <!-- Phone Button -->
+                            <a href="tel:+201017326621" class="flex items-center gap-4 bg-blue-600 hover:bg-blue-700 transition p-4 rounded-lg">
+                                <span class="text-3xl">📱</span>
+                                <div>
+                                    <p class="font-bold">Phone Call</p>
+                                    <p class="text-sm text-gray-200">+20 1017 326621</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-gray-900 to-black border border-neon-green border-opacity-30 rounded-lg p-6">
+                        <p class="text-gray-400 text-sm">
+                            <strong>100% Free Consultation:</strong> Let's discuss your goals, current fitness level, and how I can help you achieve your transformation. No obligation, just honest coaching advice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-neon-green border-opacity-20 py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+            <p class="mb-4">
+                &copy; 2024 Captain Wally. All rights reserved. | Personal Fitness Coaching
+            </p>
+            <div class="flex justify-center gap-6 mb-4">
+                <a href="https://wa.me/201017326621" target="_blank" rel="noopener noreferrer" class="hover:text-neon-green transition">WhatsApp</a>
+                <a href="https://www.instagram.com/_coach_waly?igsi=MXJyOHRqOGx4M2JzbA==" target="_blank" rel="noopener noreferrer" class="hover:text-neon-green transition">Instagram</a>
+                <a href="tel:+201017326621" class="hover:text-neon-green transition">Phone</a>
+            </div>
+            <p class="text-xs text-gray-600">
+                Disclaimer: Results may vary. Always consult with healthcare professionals before starting any fitness program.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
