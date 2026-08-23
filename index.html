@@ -1,11 +1,14 @@
-ص2<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coach Waly - Personal Fitness Coaching</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-black text-white">
     <!-- Navigation -->
@@ -53,45 +56,60 @@
     </section>
 
     <!-- About Me -->
-    <section id="about" class="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
-                About <span class="text-neon-green">Coach Waly</span>
-            </h2>
-            <div class="border-b-2 border-neon-green w-20 mx-auto mb-12"></div>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="bg-gray-800 rounded h-96 flex items-center justify-center">
-                  <img src="IMG_20260821_030102.jpg" alt="كابتن والي" class="w-full h-full object-cover rounded-xl">
-                </div>
-                <div class="space-y-6">
-                    <p class="text-gray-300 text-lg leading-relaxed">
-                        With years of dedicated experience in fitness coaching and bodybuilding, I'm passionate about helping individuals achieve their transformation goals. My expertise spans custom program design, personalized nutrition planning, and proven coaching methodologies.
-                    </p>
-                    <div class="space-y-3">
-                        <div class="flex items-start gap-4">
-                            <span class="text-neon-green text-2xl">��</span>
-                            <p class="text-gray-300"><strong>Expert Fitness Coaching:</strong> Specialized in muscle building, fat loss, and performance enhancement</p>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <span class="text-neon-green text-2xl">✓</span>
-                            <p class="text-gray-300"><strong>Custom Program Design:</strong> Tailored workouts including PPL, Arnold Split, and personalized routines</p>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <span class="text-neon-green text-2xl">✓</span>
-                            <p class="text-gray-300"><strong>Nutrition Planning:</strong> Comprehensive meal plans and diet strategies for optimal results</p>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <span class="text-neon-green text-2xl">✓</span>
-                            <p class="text-gray-300"><strong>Online Coaching:</strong> 100% online programs accessible from anywhere in the world</p>
-                        </div>
-                    </div>
-                </div>
-    
+   <section id="about" class="py-20 px-4 bg-gradient-to-b from-black to-gray-900 text-white">
+    <div class="max-w-6xl mx-auto">
+        <!-- Heading Section -->
+        <h2 class="text-4xl md:text-5xl font-bold mb-3 text-center">
+            About <span class="text-[#00FF2B]">Coach Waly</span>
+        </h2>
+        <div class="border-b-2 border-[#00FF2B] w-16 mx-auto mb-16"></div>
+
+        <!-- Content Grid -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Vertical Image Wrapper -->
+            <div class="rounded-2xl overflow-hidden bg-gray-900 border border-gray-800 shadow-2xl aspect-[3/4] max-h-[600px] mx-auto w-full">
+                <img src="./6.jpeg" alt="كابتن والي" class="w-full h-full object-cover object-top">
             </div>
 
+            <!-- Content Details -->
+            <div class="space-y-6">
+                <p class="text-gray-300 text-base md:text-lg leading-relaxed">
+                    With years of dedicated experience in fitness coaching and bodybuilding, I'm passionate about helping individuals achieve their transformation goals. My expertise spans custom program design, personalized nutrition planning, and proven coaching methodologies.
+                </p>
+
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-start gap-3">
+                        <span class="text-[#00FF2B] text-xl font-bold mt-0.5">✓</span>
+                        <p class="text-gray-300">
+                            <strong class="text-white">Expert Fitness Coaching:</strong> Specialized in muscle building, fat loss, and performance enhancement
+                        </p>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <span class="text-[#00FF2B] text-xl font-bold mt-0.5">✓</span>
+                        <p class="text-gray-300">
+                            <strong class="text-white">Custom Program Design:</strong> Tailored workouts including PPL, Arnold Split, and personalized routines
+                        </p>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <span class="text-[#00FF2B] text-xl font-bold mt-0.5">✓</span>
+                        <p class="text-gray-300">
+                            <strong class="text-white">Nutrition Planning:</strong> Comprehensive meal plans and diet strategies for optimal results
+                        </p>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <span class="text-[#00FF2B] text-xl font-bold mt-0.5">✓</span>
+                        <p class="text-gray-300">
+                            <strong class="text-white">Online Coaching:</strong> 100% online programs accessible from anywhere in the world
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-       
-    </section>
+    </div>
+</section>
 
     <!-- Services -->
     <section id="services" class="py-20 px-4 bg-black">
@@ -268,32 +286,32 @@
       
       <!-- صورة 1 -->
       <div class="bg-gray-800 rounded-2xl overflow-hidden border border-neon-green/30 hover:border-neon-green transition duration-300 p-2 flex items-center justify-center">
-        <img src="Trans1.jpg" alt="تحول 1" class="w-full h-auto max-h-96 object-contain rounded-xl">
+        <img src="./1.jpeg" alt="تحول 1" class="w-full h-auto max-h-96 object-contain rounded-xl">
       </div>
 
       <!-- صورة 2 -->
       <div class="bg-gray-800 rounded-2xl overflow-hidden border border-neon-green/30 hover:border-neon-green transition duration-300 p-2 flex items-center justify-center">
-        <img src="Trans2.jpg" alt="تحول 2" class="w-full h-auto max-h-96 object-contain rounded-xl">
+        <img src="./2.jpeg" alt="تحول 2" class="w-full h-auto max-h-96 object-contain rounded-xl">
       </div>
 
       <!-- صورة 3 -->
       <div class="bg-gray-800 rounded-2xl overflow-hidden border border-neon-green/30 hover:border-neon-green transition duration-300 p-2 flex items-center justify-center">
-        <img src="Trans3.jpg" alt="تحول 3" class="w-full h-auto max-h-96 object-contain rounded-xl">
+        <img src="./3.jpeg" alt="تحول 3" class="w-full h-auto max-h-96 object-contain rounded-xl">
       </div>
 
       <!-- صورة 4 -->
       <div class="bg-gray-800 rounded-2xl overflow-hidden border border-neon-green/30 hover:border-neon-green transition duration-300 p-2 flex items-center justify-center">
-        <img src="Trans4.jpg" alt="تحول 4" class="w-full h-auto max-h-96 object-contain rounded-xl">
+        <img src="./4.jpeg" alt="تحول 4" class="w-full h-auto max-h-96 object-contain rounded-xl">
       </div>
 
       <!-- صورة 5 -->
       <div class="bg-gray-800 rounded-2xl overflow-hidden border border-neon-green/30 hover:border-neon-green transition duration-300 p-2 flex items-center justify-center">
-        <img src="Trans5.jpg" alt="تحول 5" class="w-full h-auto max-h-96 object-contain rounded-xl">
+        <img src="./5.jpeg" alt="تحول 5" class="w-full h-auto max-h-96 object-contain rounded-xl">
       </div>
 
       <!-- صورة 6 -->
       <div class="bg-gray-800 rounded-2xl overflow-hidden border border-neon-green/30 hover:border-neon-green transition duration-300 p-2 flex items-center justify-center">
-        <img src="Trans6.jpg" alt="تحول 6" class="w-full h-auto max-h-96 object-contain rounded-xl">
+        <img src="./7.jpeg" alt="تحول 6" class="w-full h-auto max-h-96 object-contain rounded-xl">
       </div>
 
     </div>
@@ -391,8 +409,9 @@
     <footer class="bg-black border-t border-neon-green border-opacity-20 py-8 px-4">
         <div class="max-w-6xl mx-auto text-center text-gray-500 text-sm">
             <p class="mb-4">
-                &copy; 2024 Coach Waly. All rights reserved. | Personal Fitness Coaching
+                &copy; 2026 Coach Waly. | Personal Fitness Coaching
             </p>
+            
             <div class="flex justify-center gap-6 mb-4">
                 <a href="https://wa.me/+201124859604" target="_blank" rel="noopener noreferrer" class="hover:text-neon-green transition">WhatsApp</a>
                 <a href="https://www.instagram.com/_coach_waly?igsi=MXJyOHRqOGx4M2JzbA==" target="_blank" rel="noopener noreferrer" class="hover:text-neon-green transition">Instagram</a>
@@ -400,6 +419,10 @@
             </div>
             <p class="text-xs text-gray-600">
                 Disclaimer: Results may vary. Always consult with healthcare professionals before starting any fitness program.
+            </p>
+
+            <p class="mb-5">
+                &copy; 2026 Eng Oscar. |Programming and Development
             </p>
         </div>
     </footer>
