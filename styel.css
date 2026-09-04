@@ -22,7 +22,7 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background image : Mee;
+    background-image: Mee;
     color: var(--light-text);
     overflow-x: hidden;
 }
